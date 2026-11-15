@@ -1,4 +1,4 @@
-# sprint7-final-project   🌐 ** Actual Language:** English | Cambia a: [Español](README.es.md)
+# sprint7-final-project   🌐  Actual Language: English | Cambia a: [Español](README.es.md)
 
 # 📊 ConnectaTel — Customer Usage Analysis
 

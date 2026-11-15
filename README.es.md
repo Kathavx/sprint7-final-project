@@ -1,4 +1,4 @@
-🌐 **Idioma:** [English](README.md) | Español
+# sprint7-final-project 🌐 **Idioma:** [English](README.md) | Español
 
 # 📊 ConnectaTel — Análisis de uso de los clientes
 

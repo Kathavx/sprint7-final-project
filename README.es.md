@@ -1,37 +1,37 @@
 # sprint7-final-project 🌐 **Idioma Actual:** Español | Switch to: [English](README.md)
 
-# 📊 ConnectaTel — Análisis de uso de los clientes
+# 📊 ConnectaTel — Análisis del Uso de los Clientes
 
-Proyecto de Análisis Exploratorio de Datos (EDA) centrado en comprender el comportamiento de los clientes, identificar patrones de uso y desarrollar segmentos de clientes para respaldar la toma de decisiones empresariales basadas en datos.
+Proyecto de Análisis Exploratorio de Datos (EDA) enfocado en comprender el comportamiento de los clientes, identificar patrones de uso y desarrollar segmentos de clientes que permitan respaldar la toma de decisiones empresariales basadas en datos.
 
 ---
 
-## 📌 Descripción general del proyecto
+## 📌 Descripción del Proyecto
 
-Este proyecto analiza información de los clientes y datos de uso de servicios de telecomunicaciones de **ConnectaTel**, con el objetivo de comprender cómo interactúan los usuarios con los servicios de la empresa.
+Este proyecto analiza la información de los clientes y los datos de uso de los servicios de telecomunicaciones de **ConnectaTel**, con el objetivo de comprender cómo interactúan los usuarios con los servicios de la empresa.
 
-Mediante la limpieza de datos, el análisis exploratorio, la elaboración de resúmenes estadísticos y la segmentación de clientes, el proyecto busca identificar patrones relevantes que ayuden a la empresa a mejorar su oferta de servicios, fortalecer la retención de clientes y desarrollar estrategias comerciales más específicas.
+Mediante la limpieza de datos, el análisis exploratorio, los resúmenes estadísticos y la segmentación de clientes, se busca identificar patrones relevantes que ayuden a mejorar la oferta de servicios, fortalecer la retención de clientes y desarrollar estrategias comerciales más específicas.
 
 ## 🎯 Objetivos
 
 - Evaluar la calidad y consistencia de los conjuntos de datos disponibles.
-- Identificar y gestionar valores faltantes y registros no válidos.
-- Explorar los datos demográficos de los clientes y sus patrones de uso de los servicios.
-- Detectar y evaluar posibles valores atípicos (*outliers*).
-- Segmentar a los clientes según su edad e intensidad de uso.
-- Traducir los hallazgos analíticos en recomendaciones empresariales accionables.
+- Identificar y tratar valores ausentes y registros inválidos.
+- Explorar las características demográficas de los clientes y sus patrones de uso de los servicios.
+- Detectar y evaluar posibles valores atípicos.
+- Segmentar a los clientes según su edad y nivel de uso.
+- Transformar los hallazgos del análisis en recomendaciones empresariales aplicables.
 
-## 🗂️ Conjuntos de datos
+## 🗂️ Conjuntos de Datos
 
 El análisis utiliza tres conjuntos de datos:
 
 | Conjunto de datos | Descripción |
-|---|---|
-| `users` | Información de los clientes, incluyendo edad, ciudad, fecha de registro y detalles de la suscripción. |
+| ------- | ------- |
+| `users` | Información de los clientes, incluyendo edad, ciudad, fecha de registro y detalles de suscripción. |
 | `plans` | Información sobre los planes de telecomunicaciones disponibles y sus características. |
-| `usage` | Registros de la actividad de los clientes, incluyendo llamadas y mensajes de texto. |
+| `usage` | Registros de actividad de los clientes, incluyendo llamadas y mensajes de texto. |
 
-## 🛠️ Herramientas y tecnologías
+## 🛠️ Herramientas y Tecnologías
 
 - **Python** — Análisis y manipulación de datos.
 - **Pandas** — Limpieza, transformación y agregación de datos.
@@ -41,81 +41,157 @@ El análisis utiliza tres conjuntos de datos:
 - **Jupyter Notebook** — Análisis interactivo y documentación.
 - **GitHub** — Control de versiones y documentación del proyecto.
 
-## 🔎 Flujo de trabajo del análisis
+## 🔎 Flujo de Trabajo del Análisis
 
 El proyecto sigue un proceso estructurado de análisis de datos:
 
-**1. Exploración de datos**
-- Inspección de las dimensiones de los conjuntos de datos, los tipos de columnas y la estructura general.
-- Revisión de estadísticas descriptivas e identificación de problemas iniciales en la calidad de los datos.
+**1. Exploración de Datos**
 
-**2. Limpieza de datos**
-- Identificación de valores faltantes e inconsistentes.
-- Corrección de valores de edad no válidos. - Se revisaron las fechas de registro fuera del periodo de análisis.
-- Se evaluaron los valores faltantes en los registros de llamadas y mensajes.
+- Se inspeccionaron las dimensiones de los conjuntos de datos, los tipos de columnas y su estructura general.
+- Se revisaron las estadísticas descriptivas y se identificaron problemas iniciales relacionados con la calidad de los datos.
 
-**3. Preparación de datos**
-- Se convirtieron las columnas de fecha a los tipos de datos adecuados.
-- Se crearon variables auxiliares para distinguir entre llamadas y mensajes de texto.
-- Se agregó la información de uso por cliente.
-- Se combinó la información del cliente con la de uso para generar un perfil consolidado.
+**2. Limpieza de Datos**
 
-**4. Análisis exploratorio de datos**
-- Se examinaron las distribuciones de la edad de los clientes y de su nivel de uso.
-- Se compararon los patrones de actividad entre los distintos planes de suscripción.
-- Se utilizaron histogramas y diagramas de caja (*boxplots*) para explorar las distribuciones y detectar posibles valores atípicos.
+- Se identificaron valores ausentes e inconsistentes.
+- Se corrigieron valores inválidos en la variable de edad.
+- Se revisaron las fechas de registro que estaban fuera del período de análisis.
+- Se evaluaron los valores ausentes en los registros de llamadas y mensajes.
 
-**5. Análisis de valores atípicos**
-- Se identificaron observaciones extremas en cuanto a edad, llamadas, mensajes y duración acumulada de las llamadas.
-- Se evaluó si dichas observaciones correspondían a errores o a comportamientos de los clientes potencialmente significativos.
+**3. Preparación de Datos**
 
-**6. Segmentación de clientes**
-- Se clasificó a los clientes en tres grupos de edad: Jóvenes, Adultos y Adultos mayores.
-- Se clasificó a los clientes en tres grupos según su nivel de uso: Bajo, Medio y Alto.
+- Se convirtieron las columnas de fechas a los tipos de datos adecuados.
+- Se crearon variables auxiliares para distinguir llamadas y mensajes de texto.
+- Se agregaron los datos de uso por cliente.
+- Se combinaron los datos de clientes y uso para construir un perfil consolidado.
 
-**7. Perspectivas de negocio y recomendaciones**
-- Se interpretaron los segmentos de clientes resultantes.
-- Se identificaron posibles oportunidades para la retención de clientes y la mejora del servicio.
-- Se formularon recomendaciones para adaptar los planes de telecomunicaciones a los patrones de uso de los clientes.
+**4. Análisis Exploratorio de Datos (EDA)**
 
-## 📈 Hallazgos clave
+- Se examinaron las distribuciones de edad y uso de los clientes.
+- Se compararon los patrones de actividad entre los diferentes planes de suscripción.
+- Se utilizaron histogramas y diagramas de caja (*boxplots*) para explorar las distribuciones y los posibles valores atípicos.
 
-### Segmentación por edad
+**5. Análisis de Valores Atípicos**
+
+- Se identificaron observaciones extremas en las variables de edad, llamadas, mensajes y duración acumulada de llamadas.
+- Se evaluó si estas observaciones representaban errores o comportamientos de consumo potencialmente relevantes de los clientes.
+
+**6. Segmentación de Clientes**
+
+- Se clasificaron los clientes en tres grupos de edad: Jóvenes, Adultos y Adultos Mayores.
+- Se clasificaron los clientes en tres grupos según su nivel de uso: Bajo, Medio y Alto.
+
+**7. Hallazgos y Recomendaciones de Negocio**
+
+- Se interpretaron los segmentos de clientes identificados.
+- Se identificaron posibles oportunidades para mejorar la retención de clientes y los servicios ofrecidos.
+- Se propusieron recomendaciones para adaptar los planes de telecomunicaciones a los patrones de consumo de los clientes.
+
+## 📈 Principales Hallazgos
+
+### Segmentación por Edad
 
 La base de clientes se dividió en tres grupos de edad:
 
 | Segmento | Clientes | Porcentaje |
-|---|---:|---:|
-| Jóvenes | 760 | 19,00 % |
-| Adultos | 2018 | 50,45 % |
-| Adultos mayores | 1222 | 30,55 % |
-| **Total** | **4000** | **100 %** |
+| ----------- | --------- | ---------- |
+| Joven | 760 | 19,00 % |
+| Adulto | 2.018 | 50,45 % |
+| Adulto Mayor | 1.222 | 30,55 % |
+| **Total** | **4.000** | **100 %** |
 
-Los adultos constituyen el segmento más numeroso, representando aproximadamente la mitad de la base de clientes.
+Los adultos representan el segmento más numeroso, con aproximadamente la mitad de la base total de clientes.
 
-### Segmentación por nivel de uso
+### Segmentación por Nivel de Uso
 
-Los clientes fueron clasificados según su actividad de llamadas y mensajes de texto:
+Los clientes se clasificaron según su actividad de llamadas y mensajes de texto:
 
 | Segmento | Clientes | Porcentaje |
-|---|---:|---:|
-| Uso bajo | 778 | 19,45 % |
-| Uso medio | 2943 | 73,58 % |
-| Uso alto | 279 | 6,98 % |
-| **Total** | **4000** | **100 %** |
+| ------------ | --------- | ---------- |
+| Bajo uso | 778 | 19,45 % |
+| Uso medio | 2.943 | 73,58 % |
+| Alto uso | 279 | 6,98 % |
+| **Total** | **4.000** | **100 %** |
 
-Los clientes de uso medio constituyen el segmento más grande, mientras que los clientes de alto uso representan una proporción menor de la base de clientes.
+Los clientes con un nivel de uso medio representan el segmento más numeroso, mientras que los usuarios de alto uso constituyen una proporción menor de la base de clientes.
 
-## Análisis de valores atípicos
+### Análisis de Valores Atípicos
 
-Se identificaron posibles valores atípicos en el número de llamadas y mensajes, así como en la duración acumulada de las llamadas.
+Se identificaron posibles valores atípicos en la cantidad de llamadas y mensajes, así como en la duración acumulada de llamadas.
 
-Estas observaciones se mantuvieron, ya que no había pruebas suficientes para clasificarlas como errores de entrada de datos. Es posible que correspondan a clientes con un nivel de actividad realmente alto y que aporten información valiosa para la toma de decisiones empresariales.
+Estas observaciones se conservaron porque no existía evidencia suficiente para clasificarlas como errores de registro. Podrían representar clientes con una actividad elevada legítima y proporcionar información útil para la toma de decisiones empresariales.
 
-## 💡 Recomendaciones para el negocio
+## 💡 Recomendaciones de Negocio
 
 A partir del análisis, se identificaron las siguientes oportunidades:
 
-- **Clientes de alto uso:** Evaluar planes con mayores límites de consumo y beneficios adicionales para mejorar la retención.
-- **Clientes de bajo uso:** Considerar paquetes asequibles e incentivos promocionales para fomentar el uso del servicio.
-- **Clientes de uso medio:** Mantener planes competitivos que satisfagan sus necesidades.
+- **Clientes de alto uso:** Evaluar planes con mayores capacidades de consumo y beneficios adicionales para mejorar la retención.
+- **Clientes de bajo uso:** Considerar paquetes económicos e incentivos promocionales que fomenten un mayor aprovechamiento de los servicios.
+- **Clientes de uso medio:** Mantener planes competitivos que respondan a las necesidades del segmento más numeroso.
+- **Personalización de clientes:** Explorar estrategias basadas en las características demográficas y los patrones de consumo.
+- **Monitoreo del uso:** Realizar seguimiento a los clientes con niveles de actividad inusualmente elevados para identificar oportunidades de fidelización y optimización de planes.
+
+## 🚀 Cómo Ejecutar el Proyecto
+
+Puedes reproducir el análisis utilizando Google Colab o Jupyter Notebook.
+
+### Opción 1 — Google Colab
+
+1. Descarga o clona este repositorio.
+2. Ingresa a [Google Colab](https://colab.research.google.com/).
+3. Sube el notebook `.ipynb`.
+4. Sube los conjuntos de datos CSV necesarios.
+5. Actualiza las rutas de los archivos si es necesario.
+6. Ejecuta las celdas del notebook en orden secuencial.
+
+### Opción 2 — Entorno Local
+
+Clona el repositorio:
+
+```bash
+git clone <repository-url>
+cd <repository-folder>
+```
+
+Instala las librerías necesarias:
+
+```bash
+pip install pandas numpy matplotlib seaborn jupyter
+```
+
+Inicia Jupyter Notebook:
+
+```bash
+jupyter notebook
+```
+
+Abre el notebook del proyecto y ejecuta las celdas en orden.
+
+**Nota:** Los archivos CSV originales deben estar disponibles en las rutas esperadas antes de ejecutar el análisis.
+
+## 📁 Estructura Sugerida del Repositorio
+
+```text
+connectatel-customer-analysis/
+│
+├── data/
+│   ├── users.csv
+│   ├── plans.csv
+│   └── usage.csv
+│
+├── notebooks/
+│   └── connectatel_analysis.ipynb
+│
+└── README.md
+```
+
+## 👨‍💻 Autor
+
+**Juan Esteban Ochoa Osorio**
+
+Estudiante de Análisis de Datos | Bootcamp TripleTen
+
+[Perfil de GitHub](https://github.com/Kathavx)
+
+---
+
+*Este proyecto fue desarrollado como parte del Bootcamp de Data Analyst de TripleTen.*

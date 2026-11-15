@@ -31,6 +31,12 @@ El análisis utiliza tres conjuntos de datos:
 | `plans` | Información sobre los planes de telecomunicaciones disponibles y sus características. |
 | `usage` | Registros de actividad de los clientes, incluyendo llamadas y mensajes de texto. |
 
+Los archivos CSV originales están incluidos en la carpeta [`datasets/`](datasets/):
+
+- `plans.csv`
+- `users_latam.csv`
+- `usage.csv`
+
 ## 🛠️ Herramientas y Tecnologías
 
 - **Python** — Análisis y manipulación de datos.
@@ -166,22 +172,22 @@ jupyter notebook
 
 Abre el notebook del proyecto y ejecuta las celdas en orden.
 
-**Nota:** Los archivos CSV originales deben estar disponibles en las rutas esperadas antes de ejecutar el análisis.
+**Nota:** El notebook se incluye en su formato original. Las rutas de los archivos CSV apuntan al entorno local donde se desarrolló el proyecto, por lo que es posible que debas adaptarlas en tu propia copia de trabajo para utilizar los archivos de la carpeta `datasets/`. El notebook entregado no ha sido modificado.
 
-## 📁 Estructura Sugerida del Repositorio
+## 📁 Estructura del Repositorio
 
 ```text
-connectatel-customer-analysis/
+sprint7-final-project/
 │
-├── data/
-│   ├── users.csv
+├── datasets/
 │   ├── plans.csv
-│   └── usage.csv
+│   ├── users_latam.csv
+│   ├── usage.csv
+│   └── .gitkeep
 │
-├── notebooks/
-│   └── connectatel_analysis.ipynb
-│
-└── README.md
+├── JEOO-S7-Project-ConnectaTel.ipynb
+├── README.md
+└── README.es.md
 ```
 
 ## 👨‍💻 Autor

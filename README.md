@@ -31,6 +31,12 @@ The analysis uses three datasets:
 | `plans` | Information about the available telecommunications plans and their features. |
 | `usage` | Customer activity records, including calls and text messages. |
 
+The original CSV files are included in the [`datasets/`](datasets/) folder:
+
+- `plans.csv`
+- `users_latam.csv`
+- `usage.csv`
+
 ## 🛠️ Tools & Technologies
 
 - **Python** — Data analysis and manipulation.
@@ -159,22 +165,22 @@ jupyter notebook
 
 Open the project notebook and execute the cells in order.
 
-**Note:** The original CSV datasets must be available in the expected file paths before running the analysis.
+**Note:** The notebook is included in its original form. Its CSV file paths point to the original local environment, so you may need to adapt the paths in your own working copy to reference the files inside `datasets/`. The submitted notebook has not been modified.
 
-## 📁 Suggested Repository Structure
+## 📁 Repository Structure
 
 ```text
-connectatel-customer-analysis/
+sprint7-final-project/
 │
-├── data/
-│   ├── users.csv
+├── datasets/
 │   ├── plans.csv
-│   └── usage.csv
+│   ├── users_latam.csv
+│   ├── usage.csv
+│   └── .gitkeep
 │
-├── notebooks/
-│   └── connectatel_analysis.ipynb
-│
-└── README.md
+├── JEOO-S7-Project-ConnectaTel.ipynb
+├── README.md
+└── README.es.md
 ```
 
 ## 👨‍💻 Author
